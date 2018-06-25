@@ -1,0 +1,21 @@
+{
+  "name": "homework_pubsub",
+  "version": "1.0.0",
+  "main": "public/index.html",
+  "description": "Week 12, Day 1 Homework - Pub/Sub",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:underscoredotspace/cc-homework-js-pubsub.git"
+  },
+  "scripts": {
+    "start": "webpack -w",
+    "test": "mocha app/specs"
+  },
+  "author": "Colin M Tindle <ampersand@underscore.space>",
+  "license": "CC-BY-4.0",
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "webpack": "^4.12.1",
+    "webpack-command": "^0.3.0"
+  }
+}
