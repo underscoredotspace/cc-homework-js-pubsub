@@ -9,6 +9,7 @@
   },
   "scripts": {
     "start": "webpack -w",
+    "build": "webpack",
     "test": "mocha app/specs"
   },
   "author": "Colin M Tindle <ampersand@underscore.space>",
