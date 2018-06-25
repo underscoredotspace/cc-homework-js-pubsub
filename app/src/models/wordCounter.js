@@ -11,7 +11,8 @@ WordCounter.prototype.count = function(words) {
 
 WordCounter.prototype.addListener = function() {
   pubSub.subscribe('InputView:words', event => {
-    const wordCount = this.count(event.detail)
+    const words = event.detail
+    const wordCount = this.count(words)
     pubSub.publish('WordCounter:count', wordCount)
   })
 }

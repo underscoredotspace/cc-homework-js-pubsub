@@ -5,8 +5,9 @@ const ResultView = function() {
 }
 
 ResultView.prototype.addListener = function() {
-  pubSub.subscribe('WordCounter:count', wordCount => {
-    this.result.textContent = `There are ${wordCount.detail} words.`
+  pubSub.subscribe('WordCounter:count', event => {
+    const wordCount = event.detail
+    this.result.textContent = `There are ${wordCount} words.`
   })
 }
 
