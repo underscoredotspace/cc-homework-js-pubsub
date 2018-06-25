@@ -8,7 +8,6 @@ InputView.prototype.addListener = function() {
   this.form.addEventListener('submit', event => {
     event.preventDefault()
     const words = event.target.text.value
-    // console.log(words)
     pubSub.publish('InputView:words', words)
   })
 }
